@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tchdevs@substantial.com"]
   spec.description   = %q{pair with other users}
   spec.summary       = %q{Use ssh tunnel to common server. Join host wemux session}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/substantial/wepair"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "pry"
+  spec.add_development_dependency "rake", "~> 10.1"
+  spec.add_development_dependency "pry", "~> 0.9"
   spec.add_development_dependency "rspec", "~> 2.14"
 
   spec.add_dependency "highline", "~> 1.6"
