@@ -1,0 +1,4 @@
+---
+ssh_host: 'test_ssh_host'
+ssh_user: 'test_ssh_user'
+pair_user: 'test_pairprogramming'

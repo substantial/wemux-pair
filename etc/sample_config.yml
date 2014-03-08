@@ -1,0 +1,4 @@
+---
+ssh_host: <tunnel_box>
+ssh_user: <ssh_user_on_tunnel_box>
+pair_user: <pair_user_on_host_machine>
