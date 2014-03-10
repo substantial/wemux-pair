@@ -1,4 +1,4 @@
-module WePair
+module Wemux::Pair
   class PairConnection
     attr_reader :tunnel
     def initialize(tunnel)
@@ -25,7 +25,7 @@ module WePair
     end
 
     def connect
-      system "ssh #{ssh_options} -L #{rails_server_port}:localhost:3000 -p #{client_port} #{WePair.config.pair_user}@localhost"
+      system "ssh #{ssh_options} -L #{rails_server_port}:localhost:3000 -p #{client_port} #{Wemux::Pair.config.pair_user}@localhost"
     end
   end
 end

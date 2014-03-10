@@ -1,4 +1,4 @@
-# WePair
+# Wemux::Pair
 
 TODO: Write a gem description
 

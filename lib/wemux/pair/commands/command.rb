@@ -1,4 +1,4 @@
-module WePair
+module Wemux::Pair
   module Commands
     class Command
       def self.run(attrs={})

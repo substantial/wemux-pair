@@ -1,4 +1,4 @@
-module WePair
+module Wemux::Pair
   class Clipboard
     def self.copy(input)
       return unless system("which pbcopy")

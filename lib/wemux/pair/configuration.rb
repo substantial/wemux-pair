@@ -1,6 +1,6 @@
 require 'yaml'
 
-module WePair
+module Wemux::Pair
   class Configuration
     PAIR_CONFIG = '.pair.yml'
 

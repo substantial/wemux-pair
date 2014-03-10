@@ -1,4 +1,4 @@
-module WePair
+module Wemux::Pair
   class SshTunnel
     attr_reader :port_offset
 
@@ -42,11 +42,11 @@ module WePair
     private
 
     def ssh_user
-      WePair.config.ssh_user
+      Wemux::Pair.config.ssh_user
     end
 
     def ssh_host
-      WePair.config.ssh_host
+      Wemux::Pair.config.ssh_host
     end
   end
 end

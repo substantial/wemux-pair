@@ -11,4 +11,4 @@ First time set up for hosts (assuming OSX):
 
 require_relative '../lib/wepair'
 
-WePair::Pair.run(ARGV[0])
+Wemux::Pair::Pair.run(ARGV[0])

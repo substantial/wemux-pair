@@ -1,7 +1,7 @@
 require_relative "wepair/pair"
 require_relative "wepair/configuration"
 
-module WePair
+module Wemux::Pair
   def self.config
     @config ||= Configuration.load
   end

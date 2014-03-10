@@ -1,6 +1,6 @@
 require_relative 'ssh_tunnel'
 
-module WePair
+module Wemux::Pair
   class ClientTunnel < SshTunnel
     def control_path
       "/tmp/wepair-client-ssh"

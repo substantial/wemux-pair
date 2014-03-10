@@ -10,7 +10,7 @@ require_relative 'commands/create_sample_config'
 require_relative 'commands/set_pow_host'
 require_relative '../wepair'
 
-module WePair
+module Wemux::Pair
   class Pair
     def self.run(params)
       new(params).execute
@@ -24,7 +24,7 @@ module WePair
     def execute
       case param
       when "host"
-        Commands::CheckForPairUser.run(pair_user: WePair.config.pair_user)
+        Commands::CheckForPairUser.run(pair_user: Wemux::Pair.config.pair_user)
         Commands::CheckForWemux.run
         Commands::StartHostSession.run
       when "stop"
@@ -32,7 +32,7 @@ module WePair
       when ->(param) { param.to_i > 0 }
         port_offset = param.to_i
         Commands::SetPowHost.run(
-          pow_host: WePair.config.pow_host,
+          pow_host: Wemux::Pair.config.pow_host,
           server_port: port_offset + 3000)
         Commands::StartClientSession.run(port_offset: port_offset)
       when "--init"

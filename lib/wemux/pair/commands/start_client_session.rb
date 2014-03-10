@@ -2,7 +2,7 @@ require_relative 'command'
 require_relative '../client_tunnel'
 require_relative '../pair_connection'
 
-module WePair
+module Wemux::Pair
   module Commands
     class StartClientSession < Command
       def execute

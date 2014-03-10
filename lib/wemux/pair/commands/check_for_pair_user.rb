@@ -1,6 +1,6 @@
 require_relative 'command'
 
-module WePair
+module Wemux::Pair
   module Commands
     class CheckForPairUser < Command
       def execute

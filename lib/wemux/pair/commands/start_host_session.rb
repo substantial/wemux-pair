@@ -2,7 +2,7 @@ require_relative 'command'
 require_relative '../clipboard'
 require_relative '../host_tunnel'
 
-module WePair
+module Wemux::Pair
   module Commands
     class StartHostSession < Command
       def execute

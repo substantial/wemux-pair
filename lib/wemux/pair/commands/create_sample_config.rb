@@ -1,7 +1,7 @@
 require_relative 'command'
 require 'fileutils'
 
-module WePair
+module Wemux::Pair
   module Commands
     class CreateSampleConfig < Command
       def execute
@@ -17,11 +17,11 @@ module WePair
       end
 
       def config_template
-        File.join(WePair.root, 'etc', 'sample_config.yml')
+        File.join(Wemux::Pair.root, 'etc', 'sample_config.yml')
       end
 
       def config_file
-        WePair::Configuration::PAIR_CONFIG
+        Wemux::Pair::Configuration::PAIR_CONFIG
       end
 
       def config_path

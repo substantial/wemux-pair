@@ -5,7 +5,7 @@ require 'wepair/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "wepair"
-  spec.version       = WePair::VERSION
+  spec.version       = Wemux::Pair::VERSION
   spec.authors       = ["Aaron Jensen", "Shaun Dern"]
   spec.email         = ["tchdevs@substantial.com"]
   spec.description   = %q{pair with other users}
