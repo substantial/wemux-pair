@@ -2,4 +2,4 @@
 
 require_relative '../lib/wemux-pair'
 
-Wemux::Pair::Pair.run(ARGV[0])
+Wemux::Pair::Runner.run(ARGV[0])

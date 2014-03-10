@@ -12,7 +12,7 @@ require_relative '../pair'
 
 module Wemux
   module Pair
-    class Pair
+    class Runner
       def self.run(params)
         new(params).execute
       end

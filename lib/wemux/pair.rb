@@ -1,4 +1,4 @@
-require_relative "pair/pair"
+require_relative "pair/runner"
 require_relative "pair/configuration"
 
 module Wemux
