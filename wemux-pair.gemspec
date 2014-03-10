@@ -6,7 +6,7 @@ require 'wemux/pair/version'
 Gem::Specification.new do |spec|
   spec.name          = "wemux-pair"
   spec.version       = Wemux::Pair::VERSION
-  spec.authors       = ["Aaron Jensen", "Shaun Dern"]
+  spec.authors       = ["Aaron Jensen", "Beau Beveridge", "Shaun Dern"]
   spec.email         = ["tchdevs@substantial.com"]
   spec.description   = %q{pair with other users}
   spec.summary       = %q{Use ssh tunnel to common server. Join host wemux session}
