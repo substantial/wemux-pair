@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/wemux-pair'
+require_relative '../lib/wemux/pair'
 
 Wemux::Pair::Runner.run(ARGV[0])
