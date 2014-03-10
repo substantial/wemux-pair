@@ -1,3 +1,5 @@
-module Wemux::Pair
-  VERSION = "0.0.1"
+module Wemux
+  module Pair
+    VERSION = "0.0.1"
+  end
 end
