@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Wemux::Pair::VERSION
   spec.authors       = ["Aaron Jensen", "Beau Beveridge", "Shaun Dern"]
   spec.email         = ["tchdevs@substantial.com"]
-  spec.description   = %q{pair with other users}
+  spec.description   = %q{Tunnel to another persons machine and join their wemux session}
   spec.summary       = %q{Use ssh tunnel to common server. Join host wemux session}
   spec.homepage      = "https://github.com/substantial/wemux-pair"
   spec.license       = "MIT"
