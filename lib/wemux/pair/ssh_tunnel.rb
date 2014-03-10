@@ -1,4 +1,4 @@
-require_relative "../../wemux_pair"
+require_relative "../pair"
 
 module Wemux
   module Pair

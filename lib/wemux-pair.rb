@@ -1,1 +1,1 @@
-require_relative 'wemux_pair'
+require_relative "wemux/pair"

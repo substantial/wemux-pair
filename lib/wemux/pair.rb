@@ -1,5 +1,5 @@
-require_relative "wemux/pair/pair"
-require_relative "wemux/pair/configuration"
+require_relative "pair/pair"
+require_relative "pair/configuration"
 
 module Wemux
   module Pair
