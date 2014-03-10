@@ -15,7 +15,6 @@ First time set up for hosts (assuming OSX):
 
 ## Installation
 
-
 Add this line to your application's Gemfile:
 
     gem 'wemux-pair'
