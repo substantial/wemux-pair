@@ -9,6 +9,6 @@ First time set up for hosts (assuming OSX):
 4. In ~pairprogramming/.bash_profile should be: "wemux attach; exit"
 =end
 
-require_relative '../lib/wepair'
+require_relative '../lib/wemux-pair'
 
 Wemux::Pair::Pair.run(ARGV[0])

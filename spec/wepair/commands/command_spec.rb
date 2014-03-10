@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-require 'wepair/commands/command'
+require 'wemux-pair/commands/command'
 
 describe Wemux::Pair::Commands::Command do
   it "should assigns key/values passed in as attributes" do

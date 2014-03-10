@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-require 'wepair/configuration'
+require 'wemux-pair/configuration'
 
 describe Wemux::Pair::Configuration do
   let(:config_options) do

@@ -8,7 +8,7 @@ require_relative 'commands/check_for_wemux'
 require_relative 'commands/check_for_pair_user'
 require_relative 'commands/create_sample_config'
 require_relative 'commands/set_pow_host'
-require_relative '../wepair'
+require_relative '../wemux_pair'
 
 module Wemux::Pair
   class Pair
