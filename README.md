@@ -1,6 +1,7 @@
-[![Build Status](https://travis-ci.org/substantial/wemux-pair.png?branch=master)](https://travis-ci.org/substantial/wemux-pair)
-
 # Wemux::Pair
+
+[![Build Status](https://travis-ci.org/substantial/wemux-pair.png?branch=master)](https://travis-ci.org/substantial/wemux-pair)
+[![Gem Version](https://badge.fury.io/rb/wemux-pair.png)](http://badge.fury.io/rb/wemux-pair)
 
 Firewall-punching remote pairing with wemux made easy
 
