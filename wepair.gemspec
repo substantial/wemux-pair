@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'wepair/version'
+require 'wemux-pair/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "wepair"
+  spec.name          = "wemux-pair"
   spec.version       = Wemux::Pair::VERSION
   spec.authors       = ["Aaron Jensen", "Shaun Dern"]
   spec.email         = ["tchdevs@substantial.com"]
   spec.description   = %q{pair with other users}
   spec.summary       = %q{Use ssh tunnel to common server. Join host wemux session}
-  spec.homepage      = "https://github.com/substantial/wepair"
+  spec.homepage      = "https://github.com/substantial/wemux-pair"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
