@@ -2,10 +2,13 @@
 
 Firewall-punching remote pairing with wemux made easy
 
+Wemux::Pair allows two users to collaborate within the same terminal session via ssh.
+
 ## Requirements
 
 * Have a box that is accessible to both users via ssh.
 * [wemux](https://github.com/zolrath/wemux) should be installed on the host.
+
 
 ## Installation
 
@@ -23,10 +26,17 @@ Or install it yourself as:
 
 ## First time set up for hosts (assuming OSX)
 
+'Host' refers to the computer that initiates the wemux session and 'client' refers to the computer that joins the session.
+
 1. Create a `pairprogramming` user.
 2. Give that user remote login access via System Preferences>Sharing>Remote Login
 3. Add client's ssh keys to `~pairprogramming/.ssh/authorized_keys`
 4. In `~pairprogramming/.bash_profile` should be: `wemux attach; exit`
+5. Ensure your user is in the host_list in `/usr/local/etc/wemux.conf`, e.g.
+
+        host_list=(yourusername)
+
+Note: If [wemux was installed via Homebrew](https://github.com/zolrath/wemux#homebrew-on-os-x), the host_list is often misconfigured by default.
 
 ## Usage
 
