@@ -30,6 +30,7 @@ module Wemux
           "ssh",
           ssh_options,
           "-L #{offset_port(3000)}:localhost:3000",
+          "-L #{offset_port(4000)}:localhost:4000",
           "-p #{client_port}",
           "#{Wemux::Pair.config.pair_user}@localhost",
         ].join(" ")
