@@ -14,8 +14,8 @@ module Wemux
         tunnel.client_port
       end
 
-      def rails_server_port
-        3000 + port_offset
+      def offset_port(port)
+        port + port_offset
       end
 
       def ssh_options
@@ -26,7 +26,13 @@ module Wemux
       end
 
       def connect
-        system "ssh #{ssh_options} -L #{rails_server_port}:localhost:3000 -p #{client_port} #{Wemux::Pair.config.pair_user}@localhost"
+        system [
+          "ssh",
+          ssh_options,
+          "-L #{offset_port(3000)}:localhost:3000",
+          "-p #{client_port}",
+          "#{Wemux::Pair.config.pair_user}@localhost",
+        ].join(" ")
       end
     end
   end
